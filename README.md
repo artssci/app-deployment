@@ -70,14 +70,14 @@ app.on('activate', () => {
 
 ### 4. **Run and Test the App**
 
-To start the app in development mode:
+To start the app in development mode type:
 ```bash
 npm start
 ```
 
-### 7. **Package the App**
+### 5. **Package the App**
 
-To create an installer:
+To create an installer type:
 ```bash
 npm run make
 ```
