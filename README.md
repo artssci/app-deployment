@@ -27,15 +27,9 @@ npm -v
    npm install --save-dev @electron-forge/cli
    npx electron-forge import
    ```
-2. Open your package.json file and add a "description" field under "name":
+2. Open your package.json file find the "description" field and add a description like the example below:
 ```json
-{
-  "name": "weather-app",
-  "version": "1.0.0",
-  "description": "A simple weather app built with Vue.js and Electron.",
-  "main": "electron.js",
-  ...
-}
+  "description": "A simple app built with Vue.js and Electron.",
 ```
 
 
