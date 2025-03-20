@@ -1,4 +1,3 @@
-# Step-by-Step Guide to Packaging Vue.js with Electron Forge
 
 This guide will help you package a Vue.js project using Electron Forge. The Vue app consists of an `index.html` and `vue.js` file inside a folder. This guide works for students using VS Code's terminal on both Windows and macOS.
 
