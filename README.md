@@ -35,9 +35,7 @@ npm -v
 
 
 ### 3. **Create the Electron Entry File**
-In the project folder, create a new file called electron.js.
-
-Add the following code:
+In the project folder, create a new file called electron.js and copy the following code:
 ```js
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
