@@ -1,5 +1,5 @@
 
-This guide will help you package a Vue.js project using Electron Forge. The Vue app consists of an `index.html` and `vue.js` file inside a folder. This guide works for students using VS Code's terminal on both Windows and macOS.
+This guide will help you package a Vue.js project using Electron Forge. This guide works for students using VS Code's terminal on both Windows and macOS.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Since students don’t have Node.js installed, they can use a portable version:
   brew install node
   ```
 
-Once installed, open a new terminal and verify Node.js installation:
+Once installed, open **VS Code**, launch the **terminal**, and verify Node.js installation by typing the following:
 ```bash
 node -v
 npm -v
@@ -20,31 +20,30 @@ npm -v
 
 ### 2. **Initialize an Electron Forge Project**
 
-1. Open **VS Code** and launch the **terminal**.
-2. Navigate to the project folder:
+1. Initialize the project by typing:
    ```bash
-   cd path/to/your/project
+  npm init -y
+  npm install --save-dev @electron-forge/cli
+  npx electron-forge import
    ```
-3. Initialize the project:
-   ```bash
-   npx create-electron-app my-electron-app --template=forge
-   ```
-   Replace `my-electron-app` with the desired project name.
+2. Open your package.json file and add a "description" field under "name":
+```json
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A simple weather app built with Vue.js and Electron.",
+  "main": "electron.js",
+  ...
+}
+```
 
-### 3. **Add Vue.js Files to the Project**
 
-1. Copy your `index.html` and `vue.js` file into the `src` folder of your Electron project.
-2. Modify `index.html` to load inside the Electron window:
-   ```html
-   <script>
-     const { ipcRenderer } = require('electron');
-   </script>
-   ```
 
-### 4. **Modify `main.js` to Load the Vue App**
+### 3. **Create the Electron Entry File**
+In the project folder, create a new file called electron.js.
 
-In `src/main.js`, modify the `BrowserWindow` configuration:
-```javascript
+Add the following code:
+```js
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -53,40 +52,30 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
     },
-    icon: path.join(__dirname, 'assets', 'appIcon.png') // Ensure the icon path is correct
   });
-  win.loadFile('src/index.html');
+
+  win.loadFile('index.html');
 }
 
 app.whenReady().then(createWindow);
-```
 
-### 5. **Set Up Electron Forge Config for Packaging**
-
-In `package.json`, add `config.packagerConfig`:
-```json
-"config": {
-  "forge": {
-    "packagerConfig": {
-      "icon": "assets/appIcon"
-    },
-    "makers": [
-      {
-        "name": "@electron-forge/maker-squirrel",
-        "config": {}
-      },
-      {
-        "name": "@electron-forge/maker-zip",
-        "platforms": ["darwin", "linux"]
-      }
-    ]
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit();
   }
-}
+});
+
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) {
+    createWindow();
+  }
+});
 ```
 
-### 6. **Run and Test the App**
+
+### 4. **Run and Test the App**
 
 To start the app in development mode:
 ```bash
