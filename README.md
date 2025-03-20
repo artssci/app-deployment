@@ -21,10 +21,11 @@ npm -v
 ### 2. **Initialize an Electron Forge Project**
 
 1. Initialize the project by typing:
+   
    ```bash
-  npm init -y
-  npm install --save-dev @electron-forge/cli
-  npx electron-forge import
+   npm init -y
+   npm install --save-dev @electron-forge/cli
+   npx electron-forge import
    ```
 2. Open your package.json file and add a "description" field under "name":
 ```json
