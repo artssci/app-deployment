@@ -4,8 +4,6 @@ This guide will help you package a Vue.js project using Electron Forge. The Vue 
 
 ## Prerequisites
 
-Your students **do not** have Node.js, Git, or other dependencies installed. To work around this, we will provide a streamlined approach using a portable Node.js setup.
-
 ### 1. **Install Node.js (Portable Method)**
 
 Since students don’t have Node.js installed, they can use a portable version:
