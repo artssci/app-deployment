@@ -7,35 +7,38 @@ This guide will help you package a Vue.js project using Electron Forge. This gui
 
 Since students don’t have Node.js installed, they can use a portable version:
 - **Windows**: Download the **Node.js ZIP** from [Node.js official site](https://nodejs.org/en/download) and extract it.
-- **macOS**: Install Node.js using [Homebrew](https://brew.sh/) with:
-  ```bash
-  brew install node
-  ```
+- **macOS**: Download the **Node.js pkg** from [Node.js official site](https://nodejs.org/en/download) and install it following the installation wizard.
+ 
 
 Once installed, open **VS Code**, launch the **terminal**, and verify Node.js installation by typing the following:
 ```bash
 node -v
 npm -v
 ```
+If the terminal shows the version of node and npm, you can continue to the next step as it means the installation was successful.
 
 ### 2. **Initialize an Electron Forge Project**
 
-1. Initialize the project by typing:
+1. In VS Code open your project folder
+   
+2. Open a new terminal in VS Code
+   
+3. Initialize the Electron project by typing the following lines of code, one at a time. Some of them will trigger some processes in the terminal. Wait until each process is done before typing the next line of code:
    
    ```bash
    npm init -y
    npm install --save-dev @electron-forge/cli
    npx electron-forge import
    ```
-2. Open your package.json file find the "description" field and add a description like the example below:
+4. Open your package.json file find the "description" field and add a description like the example below. Don't forget to save your changes (File > Save):
+   
 ```json
-  "description": "A simple app built with Vue.js and Electron.",
+  "description": "A simple app built with Vue.js and SVG.",
 ```
 
-
-
 ### 3. **Create the Electron Entry File**
-In the project folder, create a new file called electron.js and copy the following code:
+In your project folder, create a new file called electron.js and copy the following code.  Don't forget to save your changes:
+
 ```js
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
