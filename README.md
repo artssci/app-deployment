@@ -22,6 +22,8 @@ npm -v
 ```
 
 ### 2. **Create the Electron Entry File**
+>[NOTE]
+> The Electron entry file is the starting point of your Electron app. It acts like the "main control center" that launches your application and manages its windows.
 
 1. Open your app's project folder in VS Code
 2. Create a new file inside your project folder called **main.js** and copy the following code. Don't forget to save your changes:
@@ -58,6 +60,8 @@ app.on('activate', () => {
 ```
 
 ### 3. **Initialize an Electron Project**
+>[NOTE]
+> Before building an Electron app, you need to set up the project so that Electron knows how to run it. Among other things, this process creates a **package.json** file, which acts like a guide for Electron, listing your app’s details and dependencies (i.e., libaries).
 
 
 1. Open a new terminal in VS Code
@@ -76,9 +80,9 @@ app.on('activate', () => {
 ```
 
 
-
-
 ### 4. **Run and Test the App**
+>[NOTE]
+> Once your Electron project is set up, you need to launch it in development mode to test how it works: Electron reads your project setup, then it runs your entry file (i.e, main.js), and opens your app window, letting you see it in action!
 
 To start the app in development mode type in the terminal:
 ```bash
@@ -86,6 +90,8 @@ npm start
 ```
 
 ### 5. **Package the App**
+>[NOTE]
+> Once you’ve finished developing your app you can package it for distribution, so users can install it on their computers.
 
 1. Open another terminal in VS Code.
 2. Generate installation files by typing the code below. This installation files will be saved inside the `out` directory:
