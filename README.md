@@ -4,9 +4,10 @@
 > Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, **Electron simplifies this process by using the Chromium browser engine to build cross-platform apps from a single codebase**.
 > **By following the step-by-step guide, you'll gain hands-on experience in configuring your development environment, integrating Vue.js with Electron, and preparing your application for deployment across various operating systems.**
 
-## Prerequisites
 
-### 1. **Install Node.js (Portable Method)**
+### 1. **Install Node.js**
+>[!NOTE]
+> Typically, JavaScript only runs in web browsers. Node.js lets you run JavaScript outside of a web browser. This helps JavaScript work for building apps and more.
 
 1. Install Node.js:
 - **Windows**: Download the **Node.js ZIP** from [Node.js official site](https://nodejs.org/en/download) and extract it.
