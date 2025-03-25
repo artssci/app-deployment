@@ -6,12 +6,13 @@
 
 > **Electron is an open-source framework that lets you build desktop applications** using familiar web technologies like JavaScript and HTML.
 
-> Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, **Electron simplifies this process by using the Chromium browser engine to build cross-platform apps from a single codebase**.
+> **Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform**—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, **Electron simplifies this process by using the Chromium browser engine to build cross-platform apps from a single codebase**.
 
 > **By following the step-by-step guide, you'll gain hands-on experience in configuring your development environment, integrating Vue.js with Electron, and preparing your application for deployment across various operating systems.**
 
 
 ### 1. **Install Node.js**
+
 > Typically, JavaScript only runs in web browsers. Node.js lets you run JavaScript outside of a web browser. This helps JavaScript work for building apps and more.
 
 1. Install Node.js:
@@ -27,6 +28,7 @@ npm -v
 ```
 
 ### 2. **Create the Electron Entry File**
+
 > The Electron entry file is the starting point of your Electron app. It acts like the "main control center" that launches your application and manages its windows.
 
 1. Open your app's project folder in VS Code
@@ -64,6 +66,7 @@ app.on('activate', () => {
 ```
 
 ### 3. **Initialize an Electron Project**
+
 > Before building an Electron app, you need to set up the project so that Electron knows how to run it. Among other things, this process creates a **package.json** file, which acts like a guide for Electron, listing your app’s details and dependencies (i.e., libaries).
 
 
@@ -84,6 +87,7 @@ app.on('activate', () => {
 
 
 ### 4. **Run and Test the App**
+
 > Once your Electron project is set up, you need to launch it in development mode to test how it works: Electron reads your project setup, then it runs your entry file (i.e, main.js), and opens your app window, letting you see it in action!
 
 To start the app in development mode type in the terminal:
@@ -92,6 +96,7 @@ npm start
 ```
 
 ### 5. **Package the App**
+
 > Once you’ve finished developing your app you can package it for distribution, so users can install it on their computers.
 
 1. Open another terminal in VS Code.
