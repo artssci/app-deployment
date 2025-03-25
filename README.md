@@ -1,6 +1,8 @@
 
 > [!NOTE]  
-> Electron is an open-source framework that lets you build desktop applications using familiar web technologies like JavaScript, HTML, and CSS. Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, Electron simplifies this process by combining the Chromium browser engine and Node.js runtime, allowing you to build cross-platform apps from a single codebase.
+> **Electron is an open-source framework that lets you build desktop applications** using familiar web technologies like JavaScript and HTML.
+> Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, **Electron simplifies this process by using the Chromium browser engine to build cross-platform apps from a single codebase**.
+> By following the step-by-step guide, you'll gain hands-on experience in configuring your development environment, integrating Vue.js with Electron, and preparing your application for deployment across various operating systems. 
 
 This guide will help you package a Vue.js project using Electron Forge. This guide works for students using VS Code's terminal on both Windows and macOS.
 
