@@ -106,12 +106,12 @@ npm start
 npm run make
 ```
 
-### 8. **Install and Test the Packaged App**
+### 6. **Install and Test the Packaged App**
 
 - On **Windows**, run the `.exe` file from `out/`.
 - On **macOS**, run the `.app` file from `out/`.
 
-### 9. **Uninstall the App (If Needed)**
+### 7. **Uninstall the App (If Needed)**
 
 - **Windows:** Open `Control Panel > Programs > Uninstall a program` and remove it.
 - **macOS:** Delete the `.app` file from `Applications`.
