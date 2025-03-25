@@ -1,4 +1,7 @@
 
+> [!NOTE]  
+> Electron is an open-source framework that lets you build desktop applications using familiar web technologies like JavaScript, HTML, and CSS. Normally, creating apps for Windows, macOS, and Linux requires different programming languages and tools for each platform—for example, C# with .NET for Windows, Swift or Objective-C for macOS, and C++ or Python for cross-platform development. However, Electron simplifies this process by combining the Chromium browser engine and Node.js runtime, allowing you to build cross-platform apps from a single codebase.
+
 This guide will help you package a Vue.js project using Electron Forge. This guide works for students using VS Code's terminal on both Windows and macOS.
 
 ## Prerequisites
@@ -83,7 +86,8 @@ npm start
 
 ### 5. **Package the App**
 
-Generate installation files by typing the code below. This installation files will be saved inside the `out` directory:
+1. Open another terminal in VS Code.
+2. Generate installation files by typing the code below. This installation files will be saved inside the `out` directory:
 
 ```bash
 npm run make
@@ -98,12 +102,4 @@ npm run make
 
 - **Windows:** Open `Control Panel > Programs > Uninstall a program` and remove it.
 - **macOS:** Delete the `.app` file from `Applications`.
-- **Ubuntu/Linux:** Run:
-  ```bash
-  sudo apt remove your-app-name
-  ```
-
----
-
-This guide provides a structured process for packaging Vue.js apps with Electron Forge. Let me know if you need adjustments!
 
