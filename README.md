@@ -17,27 +17,8 @@ npm -v
 ```
 If the terminal shows the version of node and npm, you can continue to the next step as it means the installation was successful.
 
-### 2. **Initialize an Electron Forge Project**
-
-1. In VS Code open your project folder
-   
-2. Open a new terminal in VS Code
-   
-3. Initialize the Electron project by typing the following lines of code, one at a time. Some of them will trigger some processes in the terminal. Wait until each process is done before typing the next line of code:
-   
-   ```bash
-   npm init -y
-   npm install --save-dev @electron-forge/cli
-   npx electron-forge import
-   ```
-4. Open your package.json file find the "description" field and add a description like the example below. Don't forget to save your changes (File > Save):
-   
-```json
-  "description": "A simple app built with Vue.js and SVG.",
-```
-
-### 3. **Create the Electron Entry File**
-In your project folder, create a new file called electron.js and copy the following code.  Don't forget to save your changes:
+### 2. **Create the Electron Entry File**
+In your project folder, create a new file called main.js and copy the following code.  Don't forget to save your changes:
 
 ```js
 const { app, BrowserWindow } = require('electron');
@@ -70,10 +51,31 @@ app.on('activate', () => {
 });
 ```
 
+### 3. **Initialize an Electron Forge Project**
+
+1. In VS Code open your project folder
+   
+2. Open a new terminal in VS Code
+   
+3. Initialize the Electron project by typing the following lines of code, one at a time. Some of them will trigger some processes in the terminal. Wait until each process is done before typing the next line of code:
+   
+   ```bash
+   npm init -y
+   npm install --save-dev @electron-forge/cli
+   npx electron-forge import
+   ```
+4. Open your package.json file find the "description" field and add a description like the example below. Don't forget to save your changes (File > Save):
+   
+```json
+  "description": "A simple app built with Vue.js and SVG.",
+```
+
+
+
 
 ### 4. **Run and Test the App**
 
-To start the app in development mode type:
+To start the app in development mode type in the terminal:
 ```bash
 npm start
 ```
