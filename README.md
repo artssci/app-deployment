@@ -30,7 +30,7 @@ npm -v
 - **Windows**: Download **Standalone Installer** from [Git official site](https://git-scm.com/downloads/win), and install it following the installation wizard. When you reach the screen "Adjusting your PATH environment", select the option: "Git from the command line and also from 3rd-party software".
 - **macOS**: Type `git` in the terminal, then click `install` in the prompt asking if you want to install Command Line Developer Tools.
 
-4. Verify **Git** installed correctly by typing:
+4. Verify **Git** installed correctly by typing the following command in the terminal:
 
 ```bash
 git --version
