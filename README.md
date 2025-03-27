@@ -28,7 +28,7 @@ npm -v
 ```
 3. Install Git:
 - **Windows**: Download **Standalone Installer** from [Git official site](https://git-scm.com/downloads/win), and install it following the installation wizard. When you reach the screen "Adjusting your PATH environment", select the option: "Git from the command line and also from 3rd-party software".
-- **macOS**: Type ```git``` in the terminal, then click **install** in the prompt asking if you want to install Command Line Developer Tools.
+- **macOS**: Type `git` in the terminal, then click `install` in the prompt asking if you want to install Command Line Developer Tools.
 
 4. Verify **Git** installed correctly by typing:
 
@@ -118,7 +118,7 @@ npm run make
 
 ### 6. **Install and Test the Packaged App**
 
-> After packaging your app in the previous step, you'll see a new folder called **out**. This folder contains your installable app. To run it, open the out folder in Finder, then launch your app.
+> After packaging your app in the previous step, you'll see a new folder called `out`. This folder contains your installable app. To run it, open the out folder in Finder, then launch your app.
 
 - On **Windows**, double click the `.exe` file from `out` folder.
 - On **macOS**, double click the `.app` file from `out` folder.
