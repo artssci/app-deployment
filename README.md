@@ -120,8 +120,8 @@ npm run make
 
 > After packaging your app in the previous step, you'll see a new folder called **out**. This folder contains your installable app. To run it, open the out folder in Finder, then launch your app.
 
-- On **Windows**, run the `.exe` file from `out` folder.
-- On **macOS**, run the `.app` file from `out` folder.
+- On **Windows**, double click the `.exe` file from `out` folder.
+- On **macOS**, double click the `.app` file from `out` folder.
 
 ### 7. **Uninstall the App (If Needed)**
 
