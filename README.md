@@ -16,7 +16,7 @@
 > Typically, JavaScript only runs in web browsers. Node.js lets you run JavaScript outside of a web browser. This helps JavaScript work for building apps and more.
 
 1. Install Node.js:
-- **Windows**: Download the **Node.js ZIP** from [Node.js official site](https://nodejs.org/en/download) and extract it.
+- **Windows**: Download the **Node.js ZIP** from [Node.js official site](https://nodejs.org/en/download), extract it, and install it following the installation wizard.
 - **macOS**: Download the **Node.js pkg** from [Node.js official site](https://nodejs.org/en/download) and install it following the installation wizard.
  
 
@@ -26,6 +26,9 @@
 node -v
 npm -v
 ```
+3. Install git:
+- **macOS**: Type ```git``` in the terminal, then click **install** in the prompt asking if you want to install Command Line Developer Tools.
+
 
 ### 2. **Create the Electron Entry File**
 
