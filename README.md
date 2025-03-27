@@ -27,7 +27,14 @@ node -v
 npm -v
 ```
 3. Install git:
+- **Windows**: Download **Standalone Installer** from [Git official site](https://git-scm.com/downloads/win), and install it following the installation wizard. When you reach the screen "Adjusting your PATH environment", select the option: "Git from the command line and also from 3rd-party software".
 - **macOS**: Type ```git``` in the terminal, then click **install** in the prompt asking if you want to install Command Line Developer Tools.
+
+4. Verify **Git** installed correctly by typing:
+
+``bash
+git --version
+```
 
 
 ### 2. **Create the Electron Entry File**
