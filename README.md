@@ -32,7 +32,7 @@ npm -v
 
 4. Verify **Git** installed correctly by typing:
 
-``bash
+```bash
 git --version
 ```
 
