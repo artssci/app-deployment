@@ -11,7 +11,7 @@
 > **By following the step-by-step guide, you'll gain hands-on experience in configuring your development environment, integrating Vue.js with Electron, and preparing your application for deployment across various operating systems.**
 
 
-### 1. **Install Node.js**
+### 1. **Install Node.js and Git**
 
 > Typically, JavaScript only runs in web browsers. Node.js lets you run JavaScript outside of a web browser. This helps JavaScript work for building apps and more.
 
@@ -26,7 +26,7 @@
 node -v
 npm -v
 ```
-3. Install git:
+3. Install Git:
 - **Windows**: Download **Standalone Installer** from [Git official site](https://git-scm.com/downloads/win), and install it following the installation wizard. When you reach the screen "Adjusting your PATH environment", select the option: "Git from the command line and also from 3rd-party software".
 - **macOS**: Type ```git``` in the terminal, then click **install** in the prompt asking if you want to install Command Line Developer Tools.
 
