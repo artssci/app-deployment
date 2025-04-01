@@ -21,7 +21,6 @@
  
 
 2. Once installed, open **VS Code**, launch the **terminal**, and verify Node.js installation by typing each line of code below one at a time. If the terminal shows the version of node and npm, you can continue to the next step as it means the installation was successful.
-
 ```bash
 node -v
 npm -v
