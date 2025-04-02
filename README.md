@@ -31,11 +31,14 @@ npm -v
 - **macOS**: Type `git` in the terminal, then click `install` in the prompt asking if you want to install Command Line Developer Tools.
 
 4. Verify **Git** installed correctly by typing the following command in the terminal:
-
 ```bash
 git --version
 ```
-
+> If the above Git installation steps for macOS don't work, type the following in the terminal:
+> ```bash
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> brew install git
+> ```
 
 ### 2. **Create the Electron Entry File**
 
